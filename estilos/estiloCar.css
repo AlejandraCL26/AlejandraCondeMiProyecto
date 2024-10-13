@@ -1,0 +1,51 @@
+.padre
+{
+    padding: 5px;
+    background-color: bisque;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header    header      header"
+                         "header    header      header"
+                         "cont2     cont1       cont3"
+                         "cont2      foot        cont3";
+}
+
+.padre .header
+{
+    grid-area: header;
+    background-color: chocolate;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.padre .nav
+{
+    grid-area: nav;
+}
+.padre .cont1
+{
+    grid-area: cont1;
+    align-items: center;
+}
+.padre .cont2
+{
+    grid-area: cont2;
+}
+.padre .cont3
+{
+    grid-area: cont3;
+    width: 100px;
+    height: 150px;
+}
+.padre .foot
+{
+    grid-area: foot;
+}
+
+.imgYo
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 60px;
+}

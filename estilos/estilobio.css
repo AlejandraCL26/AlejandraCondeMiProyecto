@@ -1,0 +1,44 @@
+.padre
+{
+    padding: 5px;
+    background-color: bisque;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr ;
+    grid-template-areas: "nav       nav     "
+                         "nav       nav"
+                         "cont1     cont1   "
+                         "cont2     cont2   "
+                         "cont3     cont3"
+                         "foot      foot    ";
+}
+
+
+.padre .nav
+{
+    grid-area: nav;
+    position: fixed;
+}
+.padre .cont1
+{
+    grid-area: cont1;
+}
+.padre .cont2
+{
+    grid-area: cont2;
+}
+.padre .cont3
+{
+    grid-area: cont3;
+}
+.padre .foot
+{
+    grid-area: foot;
+}
+
+.imgYo
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 60px;
+}
